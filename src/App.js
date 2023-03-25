@@ -1,33 +1,35 @@
-import logo from './assets/img/logo.png';
+import React, {useState, useEffect} from "react";
 import './assets/css/App.css';
-
+import Loader from './components/Loader.js';
+import MuiNavbar from "./components/MuiNavbar";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-          <ul className="App-menu">
-              <li className="App-onglet">
-                  <a href="accueil.html">Accueil</a>
-              </li>
-              <li className="App-onglet">
-                  <a href="films.html">Compétence</a>
-              </li>
-              <li className="App-onglet">
-                  <a href="musiques.html">Expérience</a>
-              </li>
-              <li className="App-onglet">
-                  <a href="musiques.html">Hobbie</a>
-              </li>
-          </ul>
-      </header>
 
-      <body className="App-body">
+    const [loader, setLoader] = useState(true);
 
-      </body>
+    useEffect(() => {
+        setLoader(true)
+        setTimeout(()=> {
+            setLoader(false);
+        },3000)
+    }, [])
 
-    </div>
-  );
+    return loader ?(
+            <Loader />
+        )
+        :
+        (
+                <div className="App">
+                    <header className="App-header">
+                        <MuiNavbar/>
+                    </header>
+
+                    <body className="App-body">
+
+
+                    </body>
+
+                </div>
+        );
 }
 
 export default App;

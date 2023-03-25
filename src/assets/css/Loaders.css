@@ -1,0 +1,47 @@
+.Loader {
+    margin-top:15%;
+    display: block;
+    position: center;
+    -webkit-animation: fadeout 3.5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadeout 3.5s; /* Firefox < 16 */
+    -ms-animation: fadeout 3.5s; /* Internet Explorer */
+    -o-animation: fadeout 3.5s; /* Opera < 12.1 */
+    animation: fadeout 3.5s;
+}
+
+.Logo, .Loaders-img{
+    display: flex;
+    width:10%;
+    margin-left: 46%;
+    margin-right: 50%;
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
