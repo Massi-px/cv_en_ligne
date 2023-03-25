@@ -7,32 +7,24 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 body{
   background-color: #282c34;
-}
-
-.App {
-  text-align: center;
 }
 
 .App-logo {
   height: 50px;
   pointer-events: none;
   width: auto;
-
   min-height: 30px;
   max-height: 70px;
 }
 
 .App-header {
   padding: 1.5%;
-  background-color: #174CE3;
+  /*background-color: #174CE3;*/
+  background-color: #EE8F46;
   min-height: auto;
   align-items: center;
   justify-content: center;
@@ -60,5 +52,17 @@ body{
 
 .App-link {
   color: #61dafb;
+}
+
+.light {
+  /* Styles CSS pour le mode clair */
+  background-color: #fff;
+  color: #333;
+}
+
+.dark {
+  /* Styles CSS pour le mode sombre */
+  background-color: #282c34;
+  color: #fff;
 }
 

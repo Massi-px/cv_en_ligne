@@ -54,7 +54,7 @@ export default function MuiNavbar() {
     };
 
     return(
-        <AppBar position={'static'} style={{borderRadius: 15, fontFamily:'Galet'}}>
+        <AppBar position={'static'} style={{borderRadius: 15, background:'#E85523'}} >
             <Toolbar>
                 <IconButton size='large' edge='start' color='inherit' aria-label='logo'>
                     <img src={logo} className="App-logo" alt="logo" />
