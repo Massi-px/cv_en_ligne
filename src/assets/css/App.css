@@ -7,11 +7,9 @@
   }
 }
 
-
-
-body{
+/*body{
   background-color: #282c34;
-}
+}*/
 
 .App-logo {
   height: 50px;
@@ -46,23 +44,11 @@ body{
 }
 
 .App-body{
-  height: auto;
+  height: 100%;
   width: auto;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-.light {
-  /* Styles CSS pour le mode clair */
-  background-color: #fff;
-  color: #333;
-}
-
-.dark {
-  /* Styles CSS pour le mode sombre */
-  background-color: #282c34;
-  color: #fff;
 }
 
