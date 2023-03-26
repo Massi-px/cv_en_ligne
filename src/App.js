@@ -7,7 +7,7 @@ import {IconButton, Paper} from '@mui/material';
 import {Brightness4, Brightness7} from '@mui/icons-material';
 
 function App() {
-    
+
     const [mode, setMode] = useState(false);
     const [loader, setLoader] = useState(true);
 
@@ -38,10 +38,12 @@ function App() {
                     <header className="App-header">
                         <MuiNavbar/>
                     </header>
-                    <Paper className='App-body' sx={{height: '100vh'}} check={mode} change={()=>setMode(!mode)}>
-                        <IconButton onClick={()=>setMode(!mode)} color="inherit">
-                            {theme.palette.mode === 'light' ? <Brightness4 /> : <Brightness7 />}
-                        </IconButton>
+                    <Paper className='App-body' sx={{height: '100vh', display: 'flex'}}>
+                        <div style={{ marginLeft: 'auto' }}>
+                            <IconButton onClick={()=>setMode(!mode)} color="inherit">
+                                {theme.palette.mode === 'light' ? <Brightness4 /> : <Brightness7 />}
+                            </IconButton>
+                        </div>
                     </Paper>
                 </Paper>
             </ThemeProvider>

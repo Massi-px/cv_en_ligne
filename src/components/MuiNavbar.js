@@ -1,6 +1,8 @@
-import {AppBar, IconButton, Toolbar, Typography, Stack, Button, MenuItem, alpha, styled, Menu} from "@mui/material";
+import {AppBar, IconButton, Toolbar, Stack, Button, MenuItem, alpha, styled, Menu} from "@mui/material";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import logo from "../assets/img/logo.png";
+import logo from "../assets/img/Logo2.png";
 import React from "react";
 
 const StyledMenu = styled((props) => (
@@ -44,6 +46,7 @@ const StyledMenu = styled((props) => (
     },
 }));
 export default function MuiNavbar() {
+
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
@@ -59,9 +62,7 @@ export default function MuiNavbar() {
                 <IconButton size='large' edge='start' color='inherit' aria-label='logo'>
                     <img src={logo} className="App-logo" alt="logo" />
                 </IconButton>
-                <Typography variant='h6' component='div' sx={{flexGrow:1}} style={{marginLeft: 2}}>
-                    MASSIMILIANO PINNA
-                </Typography>
+
                 <Stack direction='row' spacing={2}>
                     <Button color='inherit'>Accueil</Button>
                     <Button color='inherit'>Compétences</Button>
@@ -81,9 +82,10 @@ export default function MuiNavbar() {
                         open={open}
                         onClose={handleClose}
                     >
-                        <MenuItem onClick={handleClose} disableRipple>
+                        <MenuItem component="a" href="https://www.etat-d-ame.fr/" target="_blank" rel="noopener noreferrer" onClick={handleClose}>
                             Site Alternance
                         </MenuItem>
+
                         <MenuItem onClick={handleClose} disableRipple>
                             Site BDE
                         </MenuItem>
@@ -97,6 +99,14 @@ export default function MuiNavbar() {
                             Sokoban
                         </MenuItem>
                     </StyledMenu>
+                </Stack>
+                <Stack direction='row' spacing={2} sx={{marginLeft:'auto'}}>
+                    <IconButton color='inherit' href='https://www.linkedin.com/in/pinna-massimiliano/' target='_blank'>
+                        <LinkedInIcon />
+                    </IconButton>
+                    <IconButton color='inherit' href='https://github.com/Massi-px' target='_blank'>
+                        <GitHubIcon />
+                    </IconButton>
                 </Stack>
             </Toolbar>
         </AppBar>

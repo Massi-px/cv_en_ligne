@@ -11,6 +11,12 @@
   background-color: #282c34;
 }*/
 
+.App-pdp{
+  height:80px;
+  width:80px;
+  border-radius:50%;
+}
+
 .App-logo {
   height: 50px;
   pointer-events: none;
@@ -37,10 +43,6 @@
   margin-left: 10%;
   list-style-type: none ;
 
-}
-
-.App-onglet{
-  margin-left: 2.5%;
 }
 
 .App-body{
