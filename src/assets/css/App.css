@@ -28,13 +28,15 @@
 .App-header {
   padding: 1.5%;
   /*background-color: #174CE3;*/
-  background-color: #EE8F46;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(251,141,103,1) 100%);
   min-height: auto;
   align-items: center;
   justify-content: center;
   text-align: left;
   font-size: calc(10px + 2vmin);
   color: white;
+  box-shadow: 0 0 15px rgb(0 0 0 / 50%);
 }
 
 .App-menu {

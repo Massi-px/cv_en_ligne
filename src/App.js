@@ -5,6 +5,7 @@ import MuiNavbar from "./components/MuiNavbar";
 import {createTheme, ThemeProvider} from '@mui/material/styles';
 import {IconButton, Paper} from '@mui/material';
 import {Brightness4, Brightness7} from '@mui/icons-material';
+import {sxBody, styleIconLDmode} from "./assets/style/Style";
 
 function App() {
 
@@ -38,8 +39,8 @@ function App() {
                     <header className="App-header">
                         <MuiNavbar/>
                     </header>
-                    <Paper className='App-body' sx={{height: '100vh', display: 'flex'}}>
-                        <div style={{ marginLeft: 'auto' }}>
+                    <Paper className='App-body' sx={sxBody}>
+                        <div style={styleIconLDmode}>
                             <IconButton onClick={()=>setMode(!mode)} color="inherit">
                                 {theme.palette.mode === 'light' ? <Brightness4 /> : <Brightness7 />}
                             </IconButton>
