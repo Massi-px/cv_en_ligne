@@ -6,6 +6,7 @@ import {createTheme, ThemeProvider} from '@mui/material/styles';
 import {IconButton, Paper} from '@mui/material';
 import {Brightness4, Brightness7} from '@mui/icons-material';
 import {sxBody, styleIconLDmode} from "./assets/style/Style";
+import {links2} from "./components/Tabs.js";
 
 function App() {
 
@@ -37,7 +38,7 @@ function App() {
             <ThemeProvider theme={theme}>
                 <Paper className='App'>
                     <header className="App-header">
-                        <MuiNavbar/>
+                        <MuiNavbar links={links2}/>
                     </header>
                     <Paper className='App-body' sx={sxBody}>
                         <div style={styleIconLDmode}>

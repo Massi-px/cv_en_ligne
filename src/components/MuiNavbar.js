@@ -1,4 +1,4 @@
-import {AppBar, IconButton, Toolbar, Stack, Button, MenuItem, alpha, styled, Menu, useTheme, useMediaQuery} from "@mui/material";
+import {AppBar, IconButton, Toolbar, Stack, Button, MenuItem, useTheme, useMediaQuery} from "@mui/material";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -6,58 +6,10 @@ import logo from "../assets/img/Logo2.png";
 import React from "react";
 import DrawerComp from "./DrawerComp.js";
 import {styleAppBar, sxIconAppBar} from "../assets/style/Style.js";
+import {links1} from "./Tabs.js";
+import {StyledMenu} from '../assets/style/Style.js'
 
-const StyledMenu = styled((props) => (
-    <Menu
-        elevation={0}
-        anchorOrigin={{
-            vertical: 'bottom',
-            horizontal: 'right',
-        }}
-        transformOrigin={{
-            vertical: 'top',
-            horizontal: 'right',
-        }}
-        {...props}
-    />
-))(({ theme }) => ({
-    '& .MuiPaper-root': {
-        borderRadius: 6,
-        marginTop: theme.spacing(1),
-        minWidth: 180,
-        color:
-            theme.palette.mode === 'light' ? 'rgb(55, 65, 81)' : theme.palette.grey[300],
-        boxShadow:
-            'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
-        '& .MuiMenu-list': {
-            padding: '4px 0',
-        },
-        '& .MuiMenuItem-root': {
-            '& .MuiSvgIcon-root': {
-                fontSize: 18,
-                color: theme.palette.text.secondary,
-                marginRight: theme.spacing(1.5),
-            },
-            '&:active': {
-                backgroundColor: alpha(
-                    theme.palette.primary.main,
-                    theme.palette.action.selectedOpacity,
-                ),
-            },
-        },
-    },
-}));
-
-
-
-export default function MuiNavbar() {
-
-    const links = [
-        {label: 'Accueil', url: '../App.js'},
-        {label: 'Compétences', url: ''},
-        {label: 'Expériences', url: ''},
-        {label: 'Projets', icon: <KeyboardArrowDownIcon />}
-    ];
+export default function MuiNavbar({links, plinks_2}) {
 
     const theme = useTheme();
 
@@ -82,12 +34,12 @@ export default function MuiNavbar() {
 
                 {isMatch ?
                     <>
-                        <DrawerComp links={links} />
+                        <DrawerComp links={links1} />
                     </> :
                     <Stack direction='row' spacing={2}>
-                        <Button color='inherit'>Accueil</Button>
-                        <Button color='inherit'>Compétences</Button>
-                        <Button color='inherit'>Expériences</Button>
+                        {links.map((link, index) => (
+                            <Button color='inherit' key={index}>{link}</Button>
+                        ))}
                         <Button color='inherit'
                                 onClick={handleClick}
                                 endIcon={<KeyboardArrowDownIcon/>}
