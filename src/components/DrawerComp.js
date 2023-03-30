@@ -1,7 +1,18 @@
 import React, {useState} from 'react'
-import {Drawer, IconButton, List, ListItemButton, ListItemIcon, ListItemText} from '@mui/material'
+import {
+    Button,
+    Drawer,
+    IconButton,
+    List,
+    ListItemButton,
+    ListItemIcon,
+    ListItemText,
+    Menu,
+    MenuItem
+} from '@mui/material'
 import {MenuRounded} from "@mui/icons-material";
 import {styleIconMenuDrawer} from "../assets/style/Style";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 //Menu Hamburger
 export default function DrawerComp ({links}) {
     const [open, setOpen] = useState(false)
@@ -19,6 +30,17 @@ export default function DrawerComp ({links}) {
                         </ListItemButton>
                     ))}
                 </List>
+                <List>
+                    <ListItemButton target="_blank" rel="noopener noreferrer">
+                        <ListItemIcon>
+                            <KeyboardArrowDownIcon />
+                            <ListItemText>
+                                Projets
+                            </ListItemText>
+                        </ListItemIcon>
+                    </ListItemButton>
+                </List>
+
             </Drawer>
             <IconButton onClick={()=>setOpen(!open)} style={styleIconMenuDrawer}>
                 <MenuRounded/>
