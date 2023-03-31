@@ -4,7 +4,8 @@ import React from "react";
 
 export const styleAppBar = {
     borderRadius: 15,
-    background: '#E85523'
+    background: '#E85523',
+    position: 'static'
 }
 
 //Style des icones dans la barre de navigations
@@ -17,15 +18,15 @@ export const styleIconMenuDrawer = {
     color: '#FFFFFF'
 }
 
-//Style du body
-export const sxBody = {
-    height: '100vh',
-    display: 'flex'
-}
 
 //Style de l'icône pour change le thème LD = Light Dark pour les 2 thèmes différents.
 export const styleIconLDmode = {
     marginLeft:'auto'
+}
+
+export const sxBgIconLDmode = {
+    p: 2,
+    border: '1px dashed grey'
 }
 
 export const StyledMenu = styled((props) => (
