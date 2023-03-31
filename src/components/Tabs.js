@@ -5,7 +5,6 @@ export const links1 = [
     {label: 'Accueil', url: '../App.js'},
     {label: 'Compétences', url: ''},
     {label: 'Expériences', url: ''},
-    {label: 'Projets', icon: <KeyboardArrowDownIcon />}
 ];
 
 
