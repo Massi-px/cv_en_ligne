@@ -5,11 +5,12 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import logo from "../assets/img/Logo2.png";
 import React from "react";
 import DrawerComp from "./DrawerComp.js";
-import {styleAppBar, sxIconAppBar} from "../assets/style/Style.js";
+import {styleAppBar, styleIconLDmode, sxIconAppBar} from "../assets/style/Style.js";
 import {links1} from "./Tabs.js";
 import {StyledMenu} from '../assets/style/Style.js'
+import {Brightness4, Brightness7} from "@mui/icons-material";
 
-export default function MuiNavbar({links, plinks_2}) {
+export default function MuiNavbar({links, toggleTheme}) {
 
     const theme = useTheme();
 
@@ -26,7 +27,7 @@ export default function MuiNavbar({links, plinks_2}) {
     };
 
     return(
-        <AppBar position={'static'} style={styleAppBar} >
+        <AppBar position={'static'} style={styleAppBar} theme={theme} >
             <Toolbar>
                 <IconButton size='large' edge='start' color='inherit' aria-label='logo'>
                     <img src={logo} className="App-logo" alt="logo" />
@@ -75,6 +76,12 @@ export default function MuiNavbar({links, plinks_2}) {
                         </StyledMenu>
                     </Stack>}
                 <Stack direction='row' spacing={2} sx={sxIconAppBar}>
+                    <div style={styleIconLDmode}>
+                        <IconButton
+                            onClick={toggleTheme} color="inherit">
+                            {theme.palette.mode === 'light' ? <Brightness4 /> : <Brightness7 />}
+                        </IconButton>
+                    </div>
                     <IconButton color='inherit' href='https://www.linkedin.com/in/pinna-massimiliano/' target='_blank'>
                         <LinkedInIcon />
                     </IconButton>

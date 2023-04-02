@@ -1,7 +1,7 @@
 .Loader {
     margin-top:15%;
     display: block;
-    position: center;
+    position: static;
     -webkit-animation: fadeout 3.5s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadeout 3.5s; /* Firefox < 16 */
     -ms-animation: fadeout 3.5s; /* Internet Explorer */

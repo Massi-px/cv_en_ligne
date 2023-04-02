@@ -1,11 +1,13 @@
 //Style de la barre de naviguation
 import {alpha, Menu, styled} from "@mui/material";
+import { useTheme } from '@mui/material/styles';
 import React from "react";
 
+const theme = useTheme;
 export const styleAppBar = {
     borderRadius: 15,
-    background: '#E85523',
-    position: 'static'
+    background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(251,141,103,1) 100%)',
+    position: 'static',
 }
 
 //Style des icones dans la barre de navigations
@@ -26,7 +28,10 @@ export const styleIconLDmode = {
 
 export const sxBgIconLDmode = {
     p: 2,
-    border: '1px dashed grey'
+    border: '1px dashed grey',
+    borderRadius:'30px',
+    height: '10px',
+
 }
 
 export const StyledMenu = styled((props) => (
@@ -44,7 +49,7 @@ export const StyledMenu = styled((props) => (
     />
 ))(({ theme }) => ({
     '& .MuiPaper-root': {
-        borderRadius: 6,
+        borderRadius: 4,
         marginTop: theme.spacing(1),
         minWidth: 180,
         color:
