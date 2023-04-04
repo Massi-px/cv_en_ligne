@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import MuiNavbar from "../components/MuiNavbar";
 import {links2} from "../components/Tabs";
 import {Grid, Typography} from "@mui/material";
-import massi from "../assets/img/massimiliano_pinna.jpg";
+import massi from "../assets/img/massimiliano_pinna-removebg.png";
 
 export default function Home() {
     const [darkMode, setDarkMode] = useState(false);
@@ -57,8 +57,8 @@ export default function Home() {
                     </Box>
                     <Box className='Home-body'>
                         <Grid container className='identity'>
-                            <Grid item xs={8}>
-                                <Typography>Massimiliano Pinna</Typography>
+                            <Grid item xs={8} className='identity-title'>
+                                <Typography variant='h1'>Massimiliano Pinna</Typography>
                             </Grid>
                             <Grid item xs={4}>
                                 <img src={massi} className='massiPhoto' alt="massimiliano_pinna" />
