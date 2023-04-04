@@ -1,0 +1,96 @@
+*::-webkit-scrollbar{
+  display: none;
+}
+.Home {
+  background: rgb(2,0,36);
+  color: white;
+  height: 100vh;
+  position: relative;
+}
+
+.Home.light {
+  background: #fff;
+  color: #000;
+  position: relative;
+}
+
+.Home-pdp{
+  height:80px;
+  width:80px;
+  border-radius:50%;
+}
+
+.App-logo {
+  height: 50px;
+  pointer-events: none;
+  width: auto;
+  min-height: 30px;
+  max-height: 70px;
+}
+
+.Home-header {
+  padding: 1.5%;
+  /*background-color: #174CE3;*/
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(251,141,103,1) 100%);
+  min-height: auto;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  box-shadow: 0 0 30px rgb(0 0 0 / 50%);
+  position: static;
+  margin-bottom: 16px;
+}
+
+.Home-menu {
+  justify-content: right;
+  display: flex;
+  margin-left: 10%;
+  list-style-type: none ;
+
+}
+
+.Home-body{
+  padding:16px;
+}
+
+.Home-link {
+  color: #61dafb;
+}
+
+.circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 107, 107, 0.5);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  box-shadow: 0 0 15px rgba(255, 107, 107, 0.5);
+  z-index: 1101;
+}
+
+.identity{
+  display: flex;
+  justify-content: space-between;
+}
+
+.blockDark{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+
+
+.massiPhoto{
+  pointer-events: none;
+  width: 70%;
+  min-height: 30%;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}

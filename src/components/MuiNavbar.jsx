@@ -4,9 +4,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import logo from "../assets/img/Logo2.png";
 import React from "react";
-import DrawerComp from "./DrawerComp.js";
+import DrawerComp from "./DrawerComp.jsx";
 import {styleAppBar, styleIconLDmode, sxIconAppBar} from "../assets/style/Style.js";
-import {links1} from "./Tabs.js";
+import {links1} from "./Tabs.jsx";
 import {StyledMenu} from '../assets/style/Style.js'
 import {Brightness4, Brightness7} from "@mui/icons-material";
 
