@@ -79,7 +79,7 @@
   align-items: center;
 }
 
-.identity-title{
+.identity-colomn-title{
   text-align: right;
   padding-right: 10px;
 }
@@ -92,12 +92,10 @@
   border-radius: 15px;
 }
 
-
-
 .massiPhoto{
   pointer-events: none;
   width: 70%;
-  min-height: 30%;
+  min-height: 50%;
   border-radius: 20px;
   clip-path: polygon(40% 0, 100% 50%, 100% 80%, 0 66%);
 }

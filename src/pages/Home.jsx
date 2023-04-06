@@ -8,7 +8,7 @@ import {Grid, Typography} from "@mui/material";
 import massi from "../assets/img/massimiliano_pinna-removebg.png";
 
 export default function Home() {
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(true);
     const [loader, setLoader] = useState(true);
     const [circlePosition, setCirclePosition] = useState({ x: 0, y: 0 });
 
@@ -57,8 +57,9 @@ export default function Home() {
                     </Box>
                     <Box className='Home-body'>
                         <Grid container className='identity'>
-                            <Grid item xs={8} className='identity-title'>
-                                <Typography variant='h1'>Massimiliano Pinna</Typography>
+                            <Grid item xs={8} className='identity-colomn-title'>
+                                <Typography variant='h1' sx={{ fontSize: { xs: '2rem', sm: '2rem', md: '3rem' } }}>Massimiliano Pinna</Typography>
+                                <Typography sx={{marginTop:'5px'}}>Développeur junior web / mobile</Typography>
                             </Grid>
                             <Grid item xs={4}>
                                 <img src={massi} className='massiPhoto' alt="massimiliano_pinna" />
