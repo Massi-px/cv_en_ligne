@@ -2,7 +2,7 @@ import {AppBar, IconButton, Toolbar, Stack, Button, MenuItem, useTheme, useMedia
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import logo from "../assets/img/Logo2.png";
+import logo from "../assets/img/Logo2.webp";
 import React from "react";
 import DrawerComp from "./DrawerComp.jsx";
 import {styleAppBar, styleIconLDmode, sxIconAppBar} from "../assets/style/Style.js";

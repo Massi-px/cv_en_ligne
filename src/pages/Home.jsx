@@ -4,10 +4,13 @@ import Loader from "../components/Loader";
 import Box from "@mui/material/Box";
 import MuiNavbar from "../components/MuiNavbar";
 import {links2} from "../components/Tabs";
-import {Grid, Typography} from "@mui/material";
-import massi from "../assets/img/massimiliano_pinna-removebg.png";
+import {CircularProgress, Grid, Typography} from "@mui/material";
+import massi from "../assets/img/massimiliano_pinna-removebg.webp";
 
 export default function Home() {
+
+    const [progress, setProgress] = useState(0);
+
     const [darkMode, setDarkMode] = useState(true);
     const [loader, setLoader] = useState(true);
     const [circlePosition, setCirclePosition] = useState({ x: 0, y: 0 });
@@ -35,6 +38,15 @@ export default function Home() {
             setLoader(false);
         },3000)
     }, [])
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setProgress((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 1));
+        }, 1000);
+        return () => {
+            clearInterval(timer);
+        };
+    }, []);
 
     const toggleTheme = () => {
         theme.palette.mode = theme.palette.mode === 'light' ? 'dark' : 'light';
@@ -65,6 +77,11 @@ export default function Home() {
                                 <img src={massi} className='massiPhoto' alt="massimiliano_pinna" />
                             </Grid>
                         </Grid>
+
+                        <Box className ='circular-progress'>
+                            <CircularProgress variant="determinate" value={progress} />
+                        </Box>
+
                     </Box>
                 </div>
             </ThemeProvider>
