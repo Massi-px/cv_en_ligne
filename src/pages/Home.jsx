@@ -98,8 +98,9 @@ export default function Home() {
                             <Typography>
                                 au cours duquel j'ai effectué un stage de cinq semaines.
                             </Typography>
+                            <CircularProgress variant="determinate" value={progress} className="progress" />
                         </Section>
-                        <Section title="Compétences">
+                        <Section title="Skills">
                             <Typography>
                                 HTML / CSS / JavaScript / React / React Native / Node.js / MariaDB / SQL
                             </Typography>
@@ -115,11 +116,10 @@ export default function Home() {
                                     Contact
                                 </Typography>
                                 <Typography>
-                                    Envoyez-moi un email à l'adresse suivante : <a href="mailto:massimiliano.pinna@gmail.com">massimiliano.pinna@hotmail.com</a>
+                                    Envoyez-moi un email à l'adresse suivante : <a href="mailto:massimiliano.pinna@gmail.com">massimiliano.pinna@gmail.com</a>
                                 </Typography>
                             </Grid>
                         </Grid>
-                        <CircularProgress variant="determinate" value={progress} className="progress" />
                     </Box>
 
                 </div>

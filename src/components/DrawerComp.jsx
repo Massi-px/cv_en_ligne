@@ -5,16 +5,14 @@ import {
     List,
     ListItemButton,
     ListItemIcon,
-    ListItemText, useTheme,
+    ListItemText,
 } from '@mui/material'
 import {MenuRounded} from "@mui/icons-material";
-import {styleIconMenuDrawer} from "../assets/style/Style";
+import {styleIconMenuDrawer} from "../assets/style/StyleAppBar";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 //Menu Hamburger
 export default function DrawerComp ({links}) {
     const [open, setOpen] = useState(false)
-
-    const theme = useTheme();
 
     return(
         <>

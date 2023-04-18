@@ -11,7 +11,7 @@
   color: white;
   height: 100%;
   position: relative;
-  font-family: 'SF-Pro-Text-Light', sans-serif;
+
 }
 
 .Home.light {
@@ -19,6 +19,7 @@
   color: #000;
   position: relative;
   height: 100%;
+  border-radius: 15px;
 }
 
 .Home-pdp{
@@ -61,6 +62,7 @@
 
 .Home-body{
   padding:16px;
+  font-family: 'SF-Pro-Text-Light', 'SF-Pro-Text-Light', sans-serif;
 }
 
 .Home-link {
@@ -70,6 +72,8 @@
 .identity{
   justify-content: space-between;
   align-items: center;
+
+
 }
 
 .identity-colomn-title{
@@ -95,4 +99,8 @@
 
 .circular-progress{
   padding: 60px;
+}
+
+.skills{
+
 }

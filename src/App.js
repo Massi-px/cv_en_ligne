@@ -7,13 +7,13 @@ import FollowMouseCircle from "./components/FollowMouseCircle";
 
 function App() {
     return(
+
         <BrowserRouter>
             <FollowMouseCircle />
             <Routes>
                 <Route exact path="/" element={<Home />} />
             </Routes>
         </BrowserRouter>
-
     )
 
 }
