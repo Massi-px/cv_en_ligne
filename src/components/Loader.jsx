@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../assets/img/Logo2.png';
 import Loaders from '../assets/img/Loaders.gif'
-import '../assets/css/Loaders.css'
+import '../assets/css/Loaders.scss'
 export default function loader(){
     return(
         <div className="Loader">

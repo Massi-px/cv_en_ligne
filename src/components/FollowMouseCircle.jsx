@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Box from "@mui/material/Box";
-import '../assets/css/StyleCircle.css';
+import '../assets/css/StyleCircle.scss';
 
 export default function FollowMouseCircle() {
     const [position, setPosition] = useState({ x: 0, y: 0 });

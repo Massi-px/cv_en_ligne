@@ -1,17 +1,18 @@
 import React from "react";
-import {Grid, Typography} from "@mui/material";
-
-function Section ({title, children}) {
+import { Box, Typography } from "@mui/material";
+import "../assets/css/Section.scss";
+import {SectionStyle, SectionText, SectionTitle} from "../assets/style/StyleSection";
+function Section({ title, children }) {
     return (
-        <Grid container className={title.toLowerCase()}>
-            <Grid item xs={12} className={`${title.toLowerCase()}-column`}>
-                <Typography variant="h3" gutterBottom>
-                    {title}
-                </Typography>
+        <Box sx = {SectionStyle}>
+            <Typography variant="h3" gutterBottom sx={SectionTitle}>
+                {title}
+            </Typography>
+            <Box sx = {SectionText}>
                 <Typography>{children}</Typography>
-            </Grid>
-        </Grid>
+            </Box>
+        </Box>
     );
-};
+}
 
 export default Section;

@@ -1,11 +1,13 @@
 //Style de la barre de naviguation
 import {alpha, Menu, styled} from "@mui/material";
 import React from "react";
+import '../css/Appbar.scss'
 
 export const styleAppBar = {
     borderRadius: 15,
     background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(251,141,103,1) 100%)',
     position: 'static',
+    fontFamily: 'SF-Pro-Text-Light, sans-serif'
 }
 
 //Style des icones dans la barre de navigations
