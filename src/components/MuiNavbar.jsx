@@ -5,7 +5,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import logo from "../assets/img/Logo2.webp";
 import React from "react";
 import DrawerComp from "./DrawerComp.jsx";
-import {styleAppBar, styleIconLDmode, sxIconAppBar} from "../assets/style/StyleAppBar.js";
+import {styleAppBar, styleAppBarLight, styleIconLDmode, sxIconAppBar} from "../assets/style/StyleAppBar.js";
 import {links1} from "./Tabs.jsx";
 import {StyledMenu} from '../assets/style/StyleAppBar.js'
 import {Brightness4, Brightness7} from "@mui/icons-material";
@@ -27,7 +27,7 @@ export default function MuiNavbar({links, toggleTheme}) {
     };
 
     return(
-        <AppBar position={'static'} style={styleAppBar} theme={theme} >
+        <AppBar position={'static'} style={isMatch ? styleAppBarLight : styleAppBar} theme={theme} >
             <Toolbar>
                 <IconButton size='large' edge='start' color='inherit' aria-label='logo'>
                     <img src={logo} className="App-logo" alt="logo" />

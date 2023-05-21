@@ -10,6 +10,13 @@ export const styleAppBar = {
     fontFamily: 'SF-Pro-Text-Light, sans-serif'
 }
 
+export const styleAppBarLight = {
+    borderRadius: 15,
+    background: 'linear-gradient(90deg, rgba(251,141,103,1) 0%, rgba(2,0,36,1) 100%)',
+    position: 'static',
+    fontFamily: 'SF-Pro-Text-Light, sans-serif'
+}
+
 //Style des icones dans la barre de navigations
 export const sxIconAppBar = {
     marginLeft:'auto'

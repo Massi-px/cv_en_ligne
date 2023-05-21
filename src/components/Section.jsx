@@ -14,5 +14,4 @@ function Section({ title, children }) {
         </Box>
     );
 }
-
 export default Section;

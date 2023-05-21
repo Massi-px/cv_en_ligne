@@ -108,7 +108,7 @@ export default function Home() {
                             <ProgressBarDate startDate={START_DATE} deadline={DEADLINE}/>
 
                         </Section>
-                        <Section title="Compétences">
+                        <Section title="Compétences" className='SectionCompétences'>
                             <Typography>
                                 HTML / CSS / JavaScript / React / React Native / Node.js / MariaDB / SQL / PHP
                             </Typography>

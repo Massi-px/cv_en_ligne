@@ -39,15 +39,14 @@ $font-path: '../fonts/';
 
   .Home-header {
     padding: 1.5%;
-    background:rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(251, 141, 103, 1) 100%);
+
     min-height: auto;
     align-items: center;
     justify-content: center;
     text-align: left;
     font-size: calc(10px + 2vmin);
     color: white;
-    box-shadow: 0 0 30px rgb(0 0 0 / 50%);
+
     position: static;
     margin-bottom: 16px;
   }
@@ -91,4 +90,9 @@ $font-path: '../fonts/';
     border-radius: 20px;
     clip-path: polygon(40% 0, 100% 50%, 100% 80%, 0 66%);
   }
+}
+
+.SectionCompétences{
+  display: flex;
+  justify-content: flex-end;
 }
